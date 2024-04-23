@@ -8,9 +8,11 @@
   <body>
     <p>Some text</p>
     <script>
-      alert("This is an alert message!");
-      //window.opener.location.href = "https://www.google.com/";
-      window.close();
+      function alertMsg() {
+        alert("This is an alert message!");
+        window.opener.location.href = "https://www.google.com/";
+        window.close();
+      }
     </script>
-  </body>
+  </body onLoad="alertMsg()">
 </html>
